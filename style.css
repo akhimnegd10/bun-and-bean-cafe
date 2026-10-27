@@ -1,0 +1,261 @@
+:root {
+    --espresso: #49352B;
+    --cream: #F6EBDD;
+    --caramel: #C77D52;
+    --sage: #79836B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--espresso);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.welcome {
+    color: var(--caramel);
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background-color: var(--espresso);
+    color: var(--cream);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--caramel);
+}
+
+#menu {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+#menu h2 {
+    font-size: 32px;
+}
+
+#menu p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.menu-card {
+    background-color: var(--cream);
+    width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(73, 53, 43, 0.12);
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-card h3 {
+    font-size: 22px;
+    margin: 20px 10px 10px;
+}
+
+.menu-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 15px 15px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: var(--cream);
+    border-bottom: 1px solid rgba(73, 53, 43, 0.15);
+}
+
+.logo {
+    color: var(--espresso);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--espresso);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--caramel);
+}
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 12px;
+    }
+
+    .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    #menu h2 {
+        font-size: 26px;
+    }
+
+    .menu-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+}
+#about {
+    padding: 80px 20px;
+    background-color: var(--sage);
+    color: white;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+#about p:not(.welcome) {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+#about .welcome {
+    color: var(--cream);
+}
+.footer {
+    background-color: var(--espresso);
+    color: var(--cream);
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: var(--cream);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--caramel);
+}
+
+.footer .copyright {
+    border-top: 1px solid rgba(246, 235, 221, 0.2);
+    padding-top: 20px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.contact-button {
+    background-color: var(--cream);
+    color: var(--espresso);
+    margin-left: 10px;
+}
+
+.contact-button:hover {
+    background-color: var(--caramel);
+    color: white;
+}
